@@ -12,7 +12,7 @@ import verifyToken from './app/middleware/verifyToken'
 const app = express()
 app.use(express.json())
 app.use('/auth', loginRouter)
-app.use('/usuario', verifyToken, usuarioRouter)
+app.use('/usuario',  usuarioRouter)
 app.use('/receita', verifyToken, receitaRouter)
 
 export default app
