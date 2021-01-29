@@ -19,4 +19,3 @@ export class RelationReceitasUsuarios1611844922325 implements MigrationInterface
     }
 
 }
-
