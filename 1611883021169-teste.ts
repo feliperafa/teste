@@ -1,6 +1,7 @@
 import {MigrationInterface, QueryRunner} from "typeorm";
 
-export class RelationReceitasUsuarios1611844922325 implements MigrationInterface {
+export class teste1611883021169 implements MigrationInterface {
+    name = 'teste1611883021169'
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.query(`CREATE TABLE "public"."usuarios" ("id_usuario" SERIAL NOT NULL, "nome_usuario" character varying NOT NULL, "email_usuario" character varying NOT NULL, "senha_usuario" character varying NOT NULL, "created_at" TIMESTAMP WITH TIME ZONE, "updated_at" TIMESTAMP WITH TIME ZONE, CONSTRAINT "PK_b732f2ebaec41930c64b3984b4f" PRIMARY KEY ("id_usuario"))`);
@@ -19,4 +20,3 @@ export class RelationReceitasUsuarios1611844922325 implements MigrationInterface
     }
 
 }
-

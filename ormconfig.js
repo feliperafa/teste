@@ -1,4 +1,3 @@
-
 console.log("PROCESS.ENV.DATABASE_URL =>> ", process.env.DATABASE_URL)
 module.exports = {
 
@@ -15,5 +14,8 @@ module.exports = {
    "cli": {
      "migrationDir": "src/app/database/migrations/",
       "entitiesDir": "src/app/models"
-   }
+   },
+   ssl:{
+    rejectUnauthorized:false
+    }
 }
